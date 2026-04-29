@@ -1,0 +1,6 @@
+name: get_safran_data_geosas_api
+owner: MathG
+description: safran_extraction
+remote_repository_url: https://testtoolshed.g2.bx.psu.edu/repos/mathg/get_safran_data_geosas_api
+categories:
+  - Climate Analysis
