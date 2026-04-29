@@ -1,0 +1,116 @@
+{
+    "summary": {
+        "num_errors": 0,
+        "num_failures": 0,
+        "num_skips": 0,
+        "num_tests": 1
+    },
+    "tests": [
+        {
+            "data": {
+                "inputs": {
+                    "end_date_": "2000",
+                    "site_name": "folleville",
+                    "start_date_": "1989"
+                },
+                "job": {
+                    "command_line": "Rscript '/mnt/c/Users/mguimont/Desktop/Safran_Extraction/get_safran_data_geosas_api_MG.R' -m '/mnt/c/Users/mguimont/Desktop/Safran_Extraction/site_metadata.csv' -s 'folleville' -d '1989' -e '2000'",
+                    "command_version": "",
+                    "copied_from_job_id": null,
+                    "create_time": "2026-04-23T09:13:38.603831",
+                    "dependencies": [],
+                    "exit_code": 0,
+                    "external_id": "2847",
+                    "galaxy_version": "24.1",
+                    "handler": null,
+                    "history_id": "cc483d11a348c387",
+                    "id": "cc483d11a348c387",
+                    "inputs": {},
+                    "job_messages": [],
+                    "job_metrics": [
+                        {
+                            "name": "galaxy_slots",
+                            "plugin": "core",
+                            "raw_value": "1.0000000",
+                            "title": "Cores Allocated",
+                            "value": "1"
+                        },
+                        {
+                            "name": "start_epoch",
+                            "plugin": "core",
+                            "raw_value": "1776935620.0000000",
+                            "title": "Job Start Time",
+                            "value": "2026-04-23 11:13:40"
+                        },
+                        {
+                            "name": "end_epoch",
+                            "plugin": "core",
+                            "raw_value": "1776935722.0000000",
+                            "title": "Job End Time",
+                            "value": "2026-04-23 11:15:22"
+                        },
+                        {
+                            "name": "runtime_seconds",
+                            "plugin": "core",
+                            "raw_value": "102.0000000",
+                            "title": "Job Runtime (Wall Clock)",
+                            "value": "1 minute"
+                        }
+                    ],
+                    "job_runner_name": null,
+                    "job_stderr": "",
+                    "job_stdout": "",
+                    "model_class": "Job",
+                    "output_collections": {},
+                    "outputs": {
+                        "output_safran_filled": {
+                            "id": "cc483d11a348c387",
+                            "src": "hda",
+                            "uuid": "ae68e747-e14b-4c8f-91bc-417a0e9c1a24"
+                        },
+                        "output_safran_french_sites": {
+                            "id": "bc93713ba984aec2",
+                            "src": "hda",
+                            "uuid": "f4bc29a8-a9fc-4e09-8795-44c1422979a7"
+                        },
+                        "output_safran_su": {
+                            "id": "f280c7044290a38c",
+                            "src": "hda",
+                            "uuid": "2f8255a9-dec0-4d26-9e4a-7aa1d023b59f"
+                        },
+                        "output_spinup_metadata": {
+                            "id": "1118840130877437",
+                            "src": "hda",
+                            "uuid": "6ea69f1b-4afb-46a2-88c3-8c8ce91701e7"
+                        }
+                    },
+                    "params": {
+                        "__input_ext": "\"input\"",
+                        "chromInfo": "\"/tmp/tmpfnx3fdvo/galaxy-dev/tool-data/shared/ucsc/chrom/?.len\"",
+                        "dbkey": "\"?\"",
+                        "end_date_": "\"2000\"",
+                        "site_metadata": null,
+                        "site_name": "\"folleville\"",
+                        "start_date_": "\"1989\""
+                    },
+                    "state": "ok",
+                    "stderr": "\u2500\u2500 Attaching core tidyverse packages \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 tidyverse 2.0.0 \u2500\u2500\n\u2714 dplyr     1.2.1     \u2714 readr     2.2.0\n\u2714 forcats   1.0.1     \u2714 stringr   1.6.0\n\u2714 ggplot2   4.0.2     \u2714 tibble    3.3.1\n\u2714 lubridate 1.9.5     \u2714 tidyr     1.3.2\n\u2714 purrr     1.2.2     \n\u2500\u2500 Conflicts \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 tidyverse_conflicts() \u2500\u2500\n\u2716 dplyr::filter()  masks stats::filter()\n\u2716 purrr::flatten() masks jsonlite::flatten()\n\u2716 dplyr::lag()     masks stats::lag()\n\u2139 Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors\nWarning messages:\n1: package \u2018ggplot2\u2019 was built under R version 4.5.2 \n2: package \u2018tibble\u2019 was built under R version 4.5.2 \n3: package \u2018tidyr\u2019 was built under R version 4.5.2 \n4: package \u2018readr\u2019 was built under R version 4.5.2 \n5: package \u2018purrr\u2019 was built under R version 4.5.3 \n6: package \u2018dplyr\u2019 was built under R version 4.5.3 \n7: package \u2018stringr\u2019 was built under R version 4.5.2 \n8: package \u2018lubridate\u2019 was built under R version 4.5.2 \nRows: 34 Columns: 36\n\u2500\u2500 Column specification \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nDelimiter: \",\"\nchr (29): site_code, site_name, name, country, trial_status, trial_instituti...\ndbl  (7): start_date, last_soc_date, trial_duration, pft_orchidee, longitude...\n\n\u2139 Use `spec()` to retrieve the full column specification for this data.\n\u2139 Specify the column types or set `show_col_types = FALSE` to quiet this message.\nJoining with `by = join_by(site_name, start_date, end_date)`\nJoining with `by = join_by(site_name, start_date, end_date)`\n\u2192 folleville | PRENEI_Q | from 1989-01-01 to 2000-12-31\n\u2192 folleville | PRELIQ_Q | from 1989-01-01 to 2000-12-31\n\u2192 folleville | T_Q | from 1989-01-01 to 2000-12-31\n\u2192 folleville | ETP_Q | from 1989-01-01 to 2000-12-31\n\u2192 folleville | PRENEI_Q | from 1959-01-01 to 1989-01-01\n\u2192 folleville | PRELIQ_Q | from 1959-01-01 to 1989-01-01\n\u2192 folleville | T_Q | from 1959-01-01 to 1989-01-01\n\u2192 folleville | ETP_Q | from 1959-01-01 to 1989-01-01\nJoining with `by = join_by(yday)`\n",
+                    "stdout": "",
+                    "tool_id": "get_safran_data_geosas_api",
+                    "tool_stderr": "\u2500\u2500 Attaching core tidyverse packages \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 tidyverse 2.0.0 \u2500\u2500\n\u2714 dplyr     1.2.1     \u2714 readr     2.2.0\n\u2714 forcats   1.0.1     \u2714 stringr   1.6.0\n\u2714 ggplot2   4.0.2     \u2714 tibble    3.3.1\n\u2714 lubridate 1.9.5     \u2714 tidyr     1.3.2\n\u2714 purrr     1.2.2     \n\u2500\u2500 Conflicts \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 tidyverse_conflicts() \u2500\u2500\n\u2716 dplyr::filter()  masks stats::filter()\n\u2716 purrr::flatten() masks jsonlite::flatten()\n\u2716 dplyr::lag()     masks stats::lag()\n\u2139 Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors\nWarning messages:\n1: package \u2018ggplot2\u2019 was built under R version 4.5.2 \n2: package \u2018tibble\u2019 was built under R version 4.5.2 \n3: package \u2018tidyr\u2019 was built under R version 4.5.2 \n4: package \u2018readr\u2019 was built under R version 4.5.2 \n5: package \u2018purrr\u2019 was built under R version 4.5.3 \n6: package \u2018dplyr\u2019 was built under R version 4.5.3 \n7: package \u2018stringr\u2019 was built under R version 4.5.2 \n8: package \u2018lubridate\u2019 was built under R version 4.5.2 \nRows: 34 Columns: 36\n\u2500\u2500 Column specification \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nDelimiter: \",\"\nchr (29): site_code, site_name, name, country, trial_status, trial_instituti...\ndbl  (7): start_date, last_soc_date, trial_duration, pft_orchidee, longitude...\n\n\u2139 Use `spec()` to retrieve the full column specification for this data.\n\u2139 Specify the column types or set `show_col_types = FALSE` to quiet this message.\nJoining with `by = join_by(site_name, start_date, end_date)`\nJoining with `by = join_by(site_name, start_date, end_date)`\n\u2192 folleville | PRENEI_Q | from 1989-01-01 to 2000-12-31\n\u2192 folleville | PRELIQ_Q | from 1989-01-01 to 2000-12-31\n\u2192 folleville | T_Q | from 1989-01-01 to 2000-12-31\n\u2192 folleville | ETP_Q | from 1989-01-01 to 2000-12-31\n\u2192 folleville | PRENEI_Q | from 1959-01-01 to 1989-01-01\n\u2192 folleville | PRELIQ_Q | from 1959-01-01 to 1989-01-01\n\u2192 folleville | T_Q | from 1959-01-01 to 1989-01-01\n\u2192 folleville | ETP_Q | from 1959-01-01 to 1989-01-01\nJoining with `by = join_by(yday)`\n",
+                    "tool_stdout": "",
+                    "update_time": "2026-04-23T09:15:22.624153",
+                    "user_email": "planemo@galaxyproject.org"
+                },
+                "status": "success",
+                "test_index": 0,
+                "time_seconds": 104.85371804237366,
+                "tool_id": "get_safran_data_geosas_api",
+                "tool_version": "1.0.0"
+            },
+            "has_data": true,
+            "id": "get_safran_data_geosas_api-0"
+        }
+    ],
+    "version": "0.1"
+}
