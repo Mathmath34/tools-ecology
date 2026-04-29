@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tool id="get_safran_data_geosas_api" name="Extract SAFRAN climate data (GEOSAS API)" version="1.0.0" profile="21.05">
+<tool id="get_safran_data_geosas_api" name="Extract SAFRAN climate data" version="1.0.0" profile="21.05">
 
   <description>
-    Extract and format daily SAFRAN climate data for French long-term experiments (LTEs)
-    using the GEOSAS API. Outputs include precipitation, temperature, and ET0 for
-    forward simulations and model spin-up initialization.
+    daily for French Long Term Experiment
   </description>
 
-  <!-- ============================================================ -->
-  <!-- REQUIREMENTS                                                  -->
-  <!-- ============================================================ -->
   <requirements>
     <requirement type="package" version="4.5.1">r-base</requirement>
     <requirement type="package" version="2.0.0">r-jsonlite</requirement>
@@ -17,11 +12,6 @@
     <requirement type="package" version="1.7.5">r-optparse</requirement>
   </requirements>
 
-  <!-- ============================================================ -->
-  <!-- COMMAND        
-      ## Link input files into expected locations
-      ln -sf '$site_metadata' metadata/site_metadata.csv &&                                               -->
-  <!-- ============================================================ -->
   <command detect_errors="exit_code"><![CDATA[
   Rscript '$__tool_directory__/get_safran_data_geosas_api_MG.R' -m
   #if $site_metadata
@@ -40,9 +30,6 @@
   #end if
   ]]></command>
 
-  <!-- ============================================================ -->
-  <!-- INPUTS                                                        -->
-  <!-- ============================================================ -->
   <inputs>
     <param name="site_metadata"
            type="data"
